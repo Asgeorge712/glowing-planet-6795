@@ -18,6 +18,7 @@ public class HelloServlet extends HttpServlet {
         ServletOutputStream out = resp.getOutputStream();
         
         out.write("Hello Heroku".getBytes());
+        out.write("Deployed first change!".getBytes());
         out.flush();
         out.close();
     }
